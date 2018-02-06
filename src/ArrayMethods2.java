@@ -1,6 +1,8 @@
-
+//Amy Chen PD 2
+//Lab 3.2
 public class ArrayMethods2 {
 	
+	//CHANGE TO ALPHABETICAL ORDER
 	public static String[] merge(String[] list1, String[] list2) {
 		for (int i = 0; i < list1.length; i++) {
 			for (int j = 0; j < list2.length; j++) {
@@ -15,12 +17,19 @@ public class ArrayMethods2 {
 		}
 	}
 	
+	/*
+	Write a method that partitions a list using the first element as the pivot. You should return the
+	integer position of the pivot in the newly partitioned array. The original array should be rearranged
+	so that all the elements before the pivot are less than or equal to the pivot and all the elements 
+	after the pivot are greater than the pivot.
+	*/
 	public static int partition(int[] list) {
-		for(int j = list[0]; j < list.length; j++) {
+		int j;
+		for(j = list[j]; j < list.length; j++) {
 			for (int i = 1; i > j; i--) {
 				if(i < j)
-					j++;
-					i--;
+					j = j++;
+					i = i--;
 				
 		}
 	}
