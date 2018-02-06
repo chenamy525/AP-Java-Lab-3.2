@@ -12,19 +12,18 @@ public class ArrayMethods2 {
 				}
 				//else list1[i] is 0, list2[j] is 1
 			}
-			
 		}
 	}
+	
 	public static int partition(int[] list) {
-		for (int i = 0; i < list.length; i++) {
-			for (int j = i+1; j > 0; j++) {
-				if (j < i)
-					//j is index of i-1
-				if (i < j)
-					//j is index of i+1
-			}
+		for(int j = list[0]; j < list.length; j++) {
+			for (int i = 1; i > j; i--) {
+				if(i < j)
+					j++;
+					i--;
 				
 		}
 	}
 
+}
 }
