@@ -2,6 +2,17 @@
 //Lab 3.2
 public class ArrayMethods2 {
 	
+	
+	//addtestcode
+
+	int[] list = {1, 4, 4, 5, 2, 4, 3, 17, 0};
+	String[] list1 = {};
+	String[] list2 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
+			
+			
+
+	
+	
 	//CHANGE TO ALPHABETICAL ORDER
 	public static String[] merge(String[] list1, String[] list2) {
 		for (int i = 0; i < list1.length; i++) {
@@ -24,15 +35,19 @@ public class ArrayMethods2 {
 	after the pivot are greater than the pivot.
 	*/
 	public static int partition(int[] list) {
-		int j;
-		for(j = list[j]; j < list.length; j++) {
-			for (int i = 1; i > j; i--) {
-				if(i < j)
-					j = j++;
-					i = i--;
-				
-		}
-	}
+		for (int j = 0; j < list.length-1; j++) {
+			int pivot = list[j];
+			
+			for (int i = j+1; i < list.length; i++) {
+			int test = list[i];
+				if (test < pivot) {
+					int yikes = pivot;
+					pivot = test;
+					test = yikes;
+					
+				}
+			}
 
-}
+		}		
+	}
 }
