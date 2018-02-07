@@ -46,6 +46,7 @@ public class ArrayMethods2 {
 					test = yikes;
 					
 				}
+				//if test > pivot
 			}
 
 		}		
