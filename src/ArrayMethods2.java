@@ -34,16 +34,14 @@ public class ArrayMethods2 {
 	so that all the elements before the pivot are less than or equal to the pivot and all the elements 
 	after the pivot are greater than the pivot.
 	*/
-	public static int partition(int[] list) {
-		for (int j = 0; j < list.length-1; j++) {
-			int pivot = list[j];
-			
-			for (int i = j+1; i < list.length; i++) {
-			int test = list[i];
-				if (test < pivot) {
+	public static int partition(int[] list, int j) {
+		int pivot = list[j];
+		for (j = 0; j < list.length-1; j++) {
+			//???????????????
+				if (j < pivot) {
 					int yikes = pivot;
-					pivot = test;
-					test = yikes;
+					pivot = j;
+					j = yikes;
 					
 				}
 				//if test > pivot
